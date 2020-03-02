@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Oxygen – WooCommerce</title>
+</head>
+
+<body>
+    <!-- Start Toggle header -->
+    <div id="toggle-header" class="toggle-header" style="height: 0px; ">
+
+        <div class="container-fluid">
+            <div class="row toggle-header__row ">
+                <div class="col-md-10 col-sm-9">
+                    <div class="toggle-header__product">
+                        <p class="toggle-header__pragraph">NO PRODUCTS IN THE CART.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <div class="toggle-header__controls">
+                        <div class="toggle-header__btn toggle-header__btn--gray">view cart
+                            <svg class="toggle-header__icon" viewBox="0 0 24 24">
+                                <path id="header-btn__basket-icon"
+                                    d="M4.558 7l4.701-4.702c.199-.198.46-.298.721-.298.613 0 1.02.505 1.02 1.029 0 .25-.092.504-.299.711l-3.26 3.26h-2.883zm12.001 0h2.883l-4.702-4.702c-.198-.198-.459-.298-.72-.298-.613 0-1.02.505-1.02 1.029 0 .25.092.504.299.711l3.26 3.26zm7.441 2v2h-.642c-.534 0-1.022.305-1.257.786l-4.101 10.214h-12l-4.101-10.216c-.234-.48-.722-.784-1.256-.784h-.643v-2h24zm-15 4c0-.552-.448-1-1-1s-1 .448-1 1v5c0 .552.448 1 1 1s1-.448 1-1v-5zm4 0c0-.552-.448-1-1-1s-1 .448-1 1v5c0 .552.448 1 1 1s1-.448 1-1v-5zm4 0c0-.552-.447-1-1-1s-1 .448-1 1v5c0 .552.447 1 1 1s1-.448 1-1v-5z" />
+                            </svg>
+                        </div>
+                        <div class="toggle-header__btn toggle-header__btn--red">checkout
+                            <svg class="toggle-header__icon" viewBox="0 0 24 24">
+                                <path id="header-btn__basket-icon"
+                                    d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z" />
+                            </svg>
+                        </div>
+                        <div class="controls-container__subtotal ">
+                            <span class="controls__subtotal controls__subtotal--text">cart subtotal :</span>
+                            <span class="controls__subtotal controls__subtotal--number">$0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End toggle header -->
+
+    <!-- Start Header -->
+    <div class="header ">
+        <div id="change-class" class="container  ">
+            <!-- Start Logo -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header__logo">
+                        <h1 class="logo__heading">oxygen</h1>
+                        <span class="header__btn-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Logo -->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Start Top Nav -->
+                    <div id="navigation" class="navigation">
+                        <div class="header__navbar">
+                            <ul class="navbar__search  ">
+                                <span class="search__icon"><svg width="13" height="13" viewBox="0 0 24 24">
+                                        <path id="search__icon--hover"
+                                            d="M23.809 21.646l-6.205-6.205c1.167-1.605 1.857-3.579 1.857-5.711 0-5.365-4.365-9.73-9.731-9.73-5.365 0-9.73 4.365-9.73 9.73 0 5.366 4.365 9.73 9.73 9.73 2.034 0 3.923-.627 5.487-1.698l6.238 6.238 2.354-2.354zm-20.955-11.916c0-3.792 3.085-6.877 6.877-6.877s6.877 3.085 6.877 6.877-3.085 6.877-6.877 6.877c-3.793 0-6.877-3.085-6.877-6.877z" />
+                                    </svg></span>
+                                <li class="search__list ">
+                                    <form action=""><input type="search" class="search__input  "
+                                            placeholder="Search ..." autofocus> </form>
+                                </li>
+                            </ul>
+                            <ul class="navbar__list">
+                                <li class="navbar__list-item  "><a href="#"
+                                        class="navbar__anchor navbar__anchor--active">Home</a>
+                                    <span class="navbar__list-btn ">
+                                        <svg class="list-btn__icon " viewBox="0 0 24 24">
+                                            <path id="list-btn__icon" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                                        </svg>
+                                    </span>
+                                    <ul class="list-item__sub-list">
+                                        <li class="sub-list__item">Home item 1</li>
+                                        <li class="sub-list__item">Home item 1</li>
+                                        <li class="sub-list__item">Home item 1</li>
+                                        <li class="sub-list__item">Home item 1</li>
+                                        <li class="sub-list__item">Home item 1</li>
+                                        <li class="sub-list__item">Home item 1</li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__list-item"><a class="navbar__anchor">Shop</a>
+                                    <span class="navbar__list-btn">
+                                        <svg class="list-btn__icon " viewBox="0 0 24 24">
+                                            <path id="list-btn__icon" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                                        </svg>
+                                    </span>
+                                    <ul class="list-item__sub-list">
+                                        <li class="sub-list__item">Shop item1</li>
+                                        <li class="sub-list__item">Shop item1</li>
+                                        <li class="sub-list__item">Shop item1</li>
+                                        <li class="sub-list__item">Shop item1</li>
+                                        <li class="sub-list__item">Shop item1</li>
+                                        <li class="sub-list__item">Shop item1</li>
+                                        <li class="sub-list__item">Shop item1</li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__list-item"><a class="navbar__anchor">Layouts</a>
+                                    <span class="navbar__list-btn">
+                                        <svg class="list-btn__icon " viewBox="0 0 24 24">
+                                            <path id="list-btn__icon" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                                        </svg>
+                                    </span>
+                                    <ul class="list-item__sub-list">
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                        <li class="sub-list__item">Layouts item 1</li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__list-item"><a class="navbar__anchor">pages</a>
+                                    <span class="navbar__list-btn">
+                                        <svg class="list-btn__icon " viewBox="0 0 24 24">
+                                            <path id="list-btn__icon" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                                        </svg>
+                                    </span>
+                                    <ul class="list-item__sub-list">
+                                        <li class="sub-list__item">pages item 1</li>
+                                        <li class="sub-list__item">pages item 1</li>
+                                        <li class="sub-list__item">pages item 1</li>
+                                        <li class="sub-list__item">pages item 1</li>
+                                        <li class="sub-list__item">pages item 1</li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__list-item"><a class="navbar__anchor">Shortcodes </a>
+                                    <span class="navbar__list-btn">
+                                        <svg class="list-btn__icon " viewBox="0 0 24 24">
+                                            <path id="list-btn__icon" d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" />
+                                        </svg>
+                                    </span>
+                                    <ul class="list-item__sub-list">
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                        <li class="sub-list__item">Shortcodes item 1</li>
+                                    </ul>
+                                </li>
+                                <li class="navbar__list-item"><a class="navbar__anchor">Blog </a></li>
+                            </ul>
+                        </div>
+                        <!-- End Top Nav -->
+                        <!-- Start Bottom Nav -->
+                        <div class="navbar__bottom text-center">
+                            <ul class="bottom__list">
+                                <li class="bottom__list-item"><a>wishlist </a>
+                                    <svg class="bottom-listitem__heart " fill-rule="evenodd" clip-rule="evenodd"
+                                        viewBox="0 0 24 24">
+                                        <path id="bottom-listitem__heart"
+                                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                                    </svg>
+                                </li>
+                                <li class="bottom__list-item"><a>my account</a></li>
+                                <li class="bottom__list-item"><a>checkout </a></li>
+                                <li class="bottom__list-item"><a>stores </a></li>
+                                <li class="bottom__list-item"><a>buy! </a></li>
+                            </ul>
+                        </div>
+                        <!-- End Bottom Nav -->
+                    </div>
+                </div>
+            </div>
+            <!--Start Toggle button -->
+            <span class="header__toggle-button">
+                <div id="flag" class="flag">
+                    <span class="toggle-button__icon">
+                        <svg class="toggle-button__ico" viewBox="0 0 24 24">
+                            <path id="toggle-button__icon--svg"
+                                d="M4.558 7l4.701-4.702c.199-.198.46-.298.721-.298.613 0 1.02.505 1.02 1.029 0 .25-.092.504-.299.711l-3.26 3.26h-2.883zm12.001 0h2.883l-4.702-4.702c-.198-.198-.459-.298-.72-.298-.613 0-1.02.505-1.02 1.029 0 .25.092.504.299.711l3.26 3.26zm7.441 2v2h-.642c-.534 0-1.022.305-1.257.786l-4.101 10.214h-12l-4.101-10.216c-.234-.48-.722-.784-1.256-.784h-.643v-2h24zm-15 4c0-.552-.448-1-1-1s-1 .448-1 1v5c0 .552.448 1 1 1s1-.448 1-1v-5zm4 0c0-.552-.448-1-1-1s-1 .448-1 1v5c0 .552.448 1 1 1s1-.448 1-1v-5zm4 0c0-.552-.447-1-1-1s-1 .448-1 1v5c0 .552.447 1 1 1s1-.448 1-1v-5z" />
+                        </svg>
+                    </span>
+                    <span class="toggle-button__number">0</span>
+                </div>
+            </span>
+            <!--End Toggle button -->
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start carousel -->
+    <!--Carousel Wrapper-->
+    <div id="video-carousel-example2" class="carousel slide carousel-fade mainn-carusel-costume" data-ride="carousel">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+            <!-- First slide -->
+            <div class="carousel-item active">
+                <!--Mask color-->
+                <div class="view  ">
+                    <img class="view__img" src="imges/carousle/003.jpg" alt="">
+                </div>
+                <!--Caption-->
+                <div class="carousel-caption carousel-caption__frist-caption">
+                    <div class="carousel-item__first-animate">
+                        <img class="first-animate__img" src="imges/carousle/sale.png" alt="">
+
+                    </div>
+                </div>
+                <!--Caption-->
+            </div>
+            <!-- /.First slide -->
+
+            <!-- Second slide -->
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view  ">
+                    <img class="view__img" src="imges/carousle/004.jpg" alt="">
+                </div>
+                <!--Caption-->
+                <span class="carousel-caption carousel-second-caption--shopnow">
+                    <img class="second-animate__img" src="imges/carousle/shopnow.png" alt="">
+                </span>
+               
+                <!--Caption-->
+            </div>
+            <!-- /.Second slide -->
+            <!-- Third slide -->
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view  ">
+                    <img class="view__img" src="imges/carousle/005.jpg" alt="">
+                </div>
+                <!--Caption-->
+                <span class="carousel-caption carousel-third-caption--shopnow">
+                    <img class="third-animate__img" src="imges/carousle/shopnow.png" alt="">
+                </span>
+                <!--Caption-->
+            </div>
+            <!-- /.Third slide -->
+        </div>
+        <!--/.Slides-->
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#video-carousel-example2" data-slide-to="0" class="active"><span></span></li>
+            <li data-target="#video-carousel-example2" data-slide-to="1"><span></span> </li>
+            <li data-target="#video-carousel-example2" data-slide-to="2"><span></span> </li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Next</span> -->
+        </a>
+        <!--/.Controls-->
+    </div>
+    <!--Carousel Wrapper-->
+    <!-- End  carousel -->
+    <!-- top feature image hover-->
+    <div class="top-feature">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/top-feature/001.png" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--up ">
+                                <p class="feat__text-overlay--top">Nyc street style</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">Street pics form newyork</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/top-feature/002.png" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--up">
+                                <p class="feat__text-overlay--top">Nyc street style</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">Street pics form newyork</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/top-feature/003.jpg" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--up">
+                                <p class="feat__text-overlay--top">Nyc street style</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">Street pics form newyork</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- top feature image hover-->
+    <!-- Start Divider -->
+    <div class="container">
+        <div class="main-divider">
+            <h4 class="main-divider__heading">Featured Items</h4>
+            <p class="main-divider__text">Our featured products </p>
+        </div>
+    </div>
+    <!-- End Divider -->
+
+
+
+    <!-- Start Featured Items -->
+    <div class="featured-items">
+        <div class="container">
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides glide__slides--cotume">
+
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/a1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/a2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/a3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/d1.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/d2.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/d3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/b1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/b2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/b3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/e1.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/e2.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/e3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/c1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/c2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/c3.jpg" alt="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/f1.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/f2.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/f3.jpeg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/g1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/g2.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/h1.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/h2.jpg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/h3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/i1.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/i2.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/i3.jpeg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+                        <!-- Start Main Slider Item  -->
+                        <li class="glide__slide glide__slide--costume">
+                            <div class="featured-items__featured-container">
+                                <div class="featured-container__inner-slider">
+                                    <!--Start Inner Slider -->
+                                    <!-- Swiper -->
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="imges/feature-item/j1.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/j2.jpeg" alt="">
+                                            </div>
+                                            <div class="swiper-slide"><img src="imges/feature-item/j3.jpeg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-next--costume ">
+                                            <svg class="swiper__arrow-icon--right" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-prev swiper-button-prev--costome">
+                                            <svg class="swiper__arrow-icon--left" viewBox="0 0 24 24">
+                                                <path
+                                                    d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                                            </svg></div>
+                                    </div>
+
+                                    <!-- Swiper JS -->
+                                    <!--End Inner Slider -->
+                                </div>
+
+                                <div class="featured-container__featured-details">
+                                    <a href="#" class="featured-details__product-name">Fashion sweater</a>
+                                    <a href="#" class="featured-details__product-category ">t-Shirts</a>
+                                    <hr class="featured-details__product-divider ">
+                                    <span class="featured-details__product-price">$ 59.95</span>
+                                    <svg class="featured-details__product-btn--add" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7 14h-5v5h-4v-5h-5v-4h5v-5h4v5h5v4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- End Main Slider Item  -->
+
+
+
+
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left glide__arrow-costume--left " data-glide-dir="<"> <svg
+                            class="glide__arrow-icon--left" viewBox="0 0 24 24">
+                            <path d="M20 .755l-14.374 11.245 14.374 11.219-.619.781-15.381-12 15.391-12 .609.755z" />
+                        </svg> </button>
+                    <button class="glide__arrow glide__arrow--right glide__arrow-costume--right" data-glide-dir=">">
+                        <svg class="glide__arrow-icon--right" viewBox="0 0 24 24">
+                            <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Featured Items -->
+
+    <!-- Start Ecommerce -->
+    <div class="container">
+
+        <div class="ecommerce">
+            <div class="ecommerce-containt">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h4 class="ecommerce__heading">Oxygen - ecommerce theme</h4>
+                        <p class="ecommerce__text">A breathing theme built exclusively for your shop</p>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ecommerce__btn">Buy theme </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Ecommerce -->
+    <!-- Start bottom   -->
+    <div class="bottom-feature">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12 col-md-3 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/bottom-feature/001.jpeg" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--down ">
+                                <p class="feat__text-overlay--top">women</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">44 items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/bottom-feature/002.jpeg" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--down ">
+                                <p class="feat__text-overlay--top">men</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">37 itmes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/bottom-feature/003.jpg" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--down ">
+                                <p class="feat__text-overlay--top">shoes</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">9 items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 ">
+                    <div class="top-feature__feat">
+                        <div class="top-feature__feat--hover">
+                            <img src="imges/bottom-feature/004.jpg" class="img-fluid top-feature__img" alt="featImg">
+                            <div class="feat__text-overlay--down ">
+                                <p class="feat__text-overlay--top">accessories</p>
+                                <hr class="text-overlay__divider">
+                                <p class="feat__text-overlay--bottom">13 items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End bottom feature  -->
+
+    <!-- Start Divider -->
+    <div class="container">
+        <div class="main-divider">
+            <h4 class="main-divider__heading">From the blog</h4>
+            <p class="main-divider__text">blogging is fun </p>
+        </div>
+    </div>
+    <!-- End Divider -->
+    <!-- Start From the Blog  -->
+    <div class="blog">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="blog__main-box">
+                        <a href="#" class="main-box__link">
+                            <img class="link__image img-fluid " src="imges/form-the-blog/001.jpg">
+                            <span class="link__hover"></span>
+                            <span class="link__text">Read More... </span>
+                        </a>
+                        <a class="blog__link" href="#">SILK OF DREAMER </a>
+                        <span class="blog__date">MAY 3, 2016</span>
+                        <p class="blog__subject">So insisted received is occasion advanced honoured. Among ready to
+                            which up. Attacks smiling and may out assured moments man…
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__main-box">
+                        <a href="#" class="main-box__link">
+                            <img class="link__image img-fluid " src="imges/form-the-blog/002.jpeg">
+                            <span class="link__hover"></span>
+                            <span class="link__text">Read More... </span>
+                        </a>
+                        <a class="blog__link" href="#">SPLINTERED CRYING </a>
+                        <span class="blog__date">MAY 3, 2016</span>
+                        <p class="blog__subject">So insisted received is occasion advanced honoured. Among ready to
+                            which up. Attacks smiling and may out assured moments man…
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__main-box">
+                        <a href="#" class="main-box__link">
+                            <img class="link__image img-fluid " src="imges/form-the-blog/003.jpg">
+                            <span class="link__hover"></span>
+                            <span class="link__text">Read More... </span>
+                        </a>
+                        <a class="blog__link" href="#">SILK OF DREAMER </a>
+                        <span class="blog__date">MAY 3, 2016</span>
+                        <p class="blog__subject">So insisted received is occasion advanced honoured. Among ready to
+                            which up. Attacks smiling and may out assured moments man…
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End From the Blog  -->
+
+    <!-- Start Say Us -->
+    <div class="container">
+        <div class="say-us">
+            <div class="say-us__box">
+                <!-- Start carousel -->
+                <!--Carousel Wrapper-->
+                <div id="text-carousel-example2" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <!-- First slide -->
+                        <div class="carousel-item active">
+                            <!--Caption-->
+                            <div class="carousel-caption say-us__box-slide ">
+                                <div class="animated fadeInDown box-slide__container  ">
+                                    <div class="box-slide__img">
+                                        <img class="img-fluid " src="imges/say-us/001.jpg" alt="">
+                                    </div>
+                                    <div class="box-slide__content">
+                                        <p class="content__person-say">Plain and simple, awesome work! did not find a
+                                            better adjective.
+                                            In spanish I would say “Un trabajo poca madre, el más chingón que he
+                                            visto!”.
+                                        </p>
+                                        <p class="content__person-name">Cascara (Mexico)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!-- /.First slide -->
+                        <!-- Second slide -->
+                        <div class="carousel-item ">
+                            <!--Caption-->
+                            <div class="carousel-caption say-us__box-slide ">
+                                <div class="animated fadeInDown box-slide__container  ">
+                                    <div class="box-slide__img">
+                                        <img class="img-fluid " src="imges/say-us/002.jpg" alt="">
+                                    </div>
+                                    <div class="box-slide__content">
+                                        <p class="content__person-say">I have purchased a lot of admin templates on
+                                            this site and may i say, this is the best one so far. Your code is perfect.
+                                            The design is flawless. I love it.
+                                        </p>
+                                        <p class="content__person-name">Zik Phill</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!-- /. Second slide -->
+                        <!-- Third slide -->
+                        <div class="carousel-item ">
+                            <!--Caption-->
+                            <div class="carousel-caption say-us__box-slide ">
+                                <div class="animated fadeInDown box-slide__container  ">
+                                    <div class="box-slide__img">
+                                        <img class="img-fluid " src="imges/say-us/003.jpg" alt="">
+                                    </div>
+                                    <div class="box-slide__content">
+                                        <p class="content__person-say">Plain and simple, awesome work! did not find a
+                                            better adjective.
+                                            In spanish I would say “Un trabajo poca madre, el más chingón que he
+                                            visto!”.
+                                        </p>
+                                        <p class="content__person-name">Themina </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Caption-->
+                        </div>
+                        <!-- /.Third slide -->
+                    </div>
+                    <!--/.Slides-->
+                    <!--Indicators-->
+                    <ol class="carousel-indicators--costume carousel-indicators ">
+                        <li data-target="#text-carousel-example2" data-slide-to="0" class="active"></li>
+                        <li data-target="#text-carousel-example2" data-slide-to="1"></li>
+                        <li data-target="#text-carousel-example2" data-slide-to="2"> </li>
+                    </ol>
+                    <!--/.Indicators-->
+                </div>
+                <!--Carousel Wrapper-->
+                <!-- End  carousel -->
+            </div>
+        </div>
+    </div>
+    <!-- Start Say Us -->
+    <!-- Start Offers Table -->
+    <div class="offer-table">
+        <div class="container">
+            <div class="row">
+
+                <div class="  col-md-6 col-lg-3">
+                    <div class="offer-table__offer-box ">
+                        <h6 class="offer-box__heading">Featuerd Products</h6>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/001.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/002.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/012.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="  col-md-6 col-lg-3">
+                    <div class="offer-table__offer-box ">
+                        <h6 class="offer-box__heading">ON SALE</h6>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/005.jpeg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/006.png" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/007.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="  col-md-6 col-lg-3">
+                    <div class="offer-table__offer-box ">
+                        <h6 class="offer-box__heading">RANDOM PRODUCTS</h6>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/008.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/009.png" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/010.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="  col-md-6 col-lg-3">
+                    <div class="offer-table__offer-box ">
+                        <h6 class="offer-box__heading">LOW PRICE</h6>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/003.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/004.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                        <div class="offer-box__item-box">
+                            <div class="item-box__img-box">
+                                <img src="imges/offer-img/011.jpg" alt="product img">
+                            </div>
+                            <div class="item-box__details-box">
+                                <p class="details-box__product-name">BRICE LEATHER BELT</p>
+                                <p class="details-box__product-price">$ 39.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Offers Table -->
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top-footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="top-footer__footer-box">
+                            <h5 class="footer-box__heading">About Oxygen</h5>
+                            <p class="footer-box__text">Improve ashamed married expense bed her comfort pursuit mrs.
+                                Four time took ye your as fail lady. Up greatest am exertion or marianne. Shy occasional
+                                terminated insensible and inhabiting.</p>
+                            <ul class="footer-box__social-list">
+                                <li class="social-list__li-icon">
+                                    <svg class="social-list__svg-icon--facebook  social-list__svg-icon  "
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z" />
+                                    </svg>
+                                </li>
+                                <li class="social-list__li-icon">
+                                    <svg class="social-list__svg-icon--instagram social-list__svg-icon "
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M14.829 6.302c-.738-.034-.96-.04-2.829-.04s-2.09.007-2.828.04c-1.899.087-2.783.986-2.87 2.87-.033.738-.041.959-.041 2.828s.008 2.09.041 2.829c.087 1.879.967 2.783 2.87 2.87.737.033.959.041 2.828.041 1.87 0 2.091-.007 2.829-.041 1.899-.086 2.782-.988 2.87-2.87.033-.738.04-.96.04-2.829s-.007-2.09-.04-2.828c-.088-1.883-.973-2.783-2.87-2.87zm-2.829 9.293c-1.985 0-3.595-1.609-3.595-3.595 0-1.985 1.61-3.594 3.595-3.594s3.595 1.609 3.595 3.594c0 1.985-1.61 3.595-3.595 3.595zm3.737-6.491c-.464 0-.84-.376-.84-.84 0-.464.376-.84.84-.84.464 0 .84.376.84.84 0 .463-.376.84-.84.84zm-1.404 2.896c0 1.289-1.045 2.333-2.333 2.333s-2.333-1.044-2.333-2.333c0-1.289 1.045-2.333 2.333-2.333s2.333 1.044 2.333 2.333zm-2.333-12c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.958 14.886c-.115 2.545-1.532 3.955-4.071 4.072-.747.034-.986.042-2.887.042s-2.139-.008-2.886-.042c-2.544-.117-3.955-1.529-4.072-4.072-.034-.746-.042-.985-.042-2.886 0-1.901.008-2.139.042-2.886.117-2.544 1.529-3.955 4.072-4.071.747-.035.985-.043 2.886-.043s2.14.008 2.887.043c2.545.117 3.957 1.532 4.071 4.071.034.747.042.985.042 2.886 0 1.901-.008 2.14-.042 2.886z" />
+                                    </svg>
+                                </li>
+                                <li class="social-list__li-icon">
+                                    <svg class="social-list__svg-icon--youtube social-list__svg-icon "
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M10.918 13.933h.706v3.795h-.706v-.419c-.13.154-.266.272-.405.353-.381.218-.902.213-.902-.557v-3.172h.705v2.909c0 .153.037.256.188.256.138 0 .329-.176.415-.284v-2.881zm.642-4.181c.2 0 .311-.16.311-.377v-1.854c0-.223-.098-.38-.324-.38-.208 0-.309.161-.309.38v1.854c-.001.21.117.377.322.377zm-1.941 2.831h-2.439v.747h.823v4.398h.795v-4.398h.821v-.747zm4.721 2.253v2.105c0 .47-.176.834-.645.834-.259 0-.474-.094-.671-.34v.292h-.712v-5.145h.712v1.656c.16-.194.375-.354.628-.354.517.001.688.437.688.952zm-.727.043c0-.128-.024-.225-.075-.292-.086-.113-.244-.125-.367-.062l-.146.116v2.365l.167.134c.115.058.283.062.361-.039.04-.054.061-.141.061-.262v-1.96zm10.387-2.879c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-10.746-2.251c0 .394.12.712.519.712.224 0 .534-.117.855-.498v.44h.741v-3.986h-.741v3.025c-.09.113-.291.299-.436.299-.159 0-.197-.108-.197-.269v-3.055h-.741v3.332zm-2.779-2.294v1.954c0 .703.367 1.068 1.085 1.068.597 0 1.065-.399 1.065-1.068v-1.954c0-.624-.465-1.071-1.065-1.071-.652 0-1.085.432-1.085 1.071zm-2.761-2.455l.993 3.211v2.191h.835v-2.191l.971-3.211h-.848l-.535 2.16-.575-2.16h-.841zm10.119 10.208c-.013-2.605-.204-3.602-1.848-3.714-1.518-.104-6.455-.103-7.971 0-1.642.112-1.835 1.104-1.848 3.714.013 2.606.204 3.602 1.848 3.715 1.516.103 6.453.103 7.971 0 1.643-.113 1.835-1.104 1.848-3.715zm-.885-.255v.966h-1.35v.716c0 .285.024.531.308.531.298 0 .315-.2.315-.531v-.264h.727v.285c0 .731-.313 1.174-1.057 1.174-.676 0-1.019-.491-1.019-1.174v-1.704c0-.659.435-1.116 1.071-1.116.678.001 1.005.431 1.005 1.117zm-.726-.007c0-.256-.054-.445-.309-.445-.261 0-.314.184-.314.445v.385h.623v-.385z" />
+                                    </svg>
+                                </li>
+                                <li class="social-list__li-icon">
+                                    <svg class="social-list__svg-icon--twitter social-list__svg-icon "
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z" />
+                                    </svg>
+                                </li>
+                                <li class="social-list__li-icon">
+                                    <svg class="social-list__svg-icon--plus social-list__svg-icon "
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2.917 16.083c-2.258 0-4.083-1.825-4.083-4.083s1.825-4.083 4.083-4.083c1.103 0 2.024.402 2.735 1.067l-1.107 1.068c-.304-.292-.834-.63-1.628-.63-1.394 0-2.531 1.155-2.531 2.579 0 1.424 1.138 2.579 2.531 2.579 1.616 0 2.224-1.162 2.316-1.762h-2.316v-1.4h3.855c.036.204.064.408.064.677.001 2.332-1.563 3.988-3.919 3.988zm9.917-3.5h-1.75v1.75h-1.167v-1.75h-1.75v-1.166h1.75v-1.75h1.167v1.75h1.75v1.166z" />
+                                    </svg>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-footer__footer-box">
+                            <h5 class="footer-box__heading">Tags</h5>
+                            <a href="#" class="footer-box__tags">blog</a>
+                            <a href="#" class="footer-box__tags">Fashion</a>
+                            <a href="#" class="footer-box__tags">Green</a>
+                            <a href="#" class="footer-box__tags">Ootd</a>
+                            <a href="#" class="footer-box__tags">Outfit</a>
+                            <a href="#" class="footer-box__tags">Post</a>
+                            <a href="#" class="footer-box__tags">Potd</a>
+                            <a href="#" class="footer-box__tags">Sample</a>
+                            <a href="#" class="footer-box__tags">Seaside</a>
+                            <a href="#" class="footer-box__tags">streetstye</a>
+                            <a href="#" class="footer-box__tags">Streetstyle</a>
+                            <a href="#" class="footer-box__tags">Summer</a>
+                            <a href="#" class="footer-box__tags">Sunny</a>
+                            <a href="#" class="footer-box__tags">Today</a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-footer__footer-box">
+                            <h5 class="footer-box__heading">Newsletter</h5>
+                            <p class="footer-box__text">Win a coupon of 20% by subscribing to our newsletter, it's easy
+                                just enter your e-mail below:</p>
+                            <form action="#" class="footer-box__subscribe-form">
+                                <input class="footer-box__ssubscribe-input" type="email" placeholder="E-mail">
+                                <button class="footer-box__ssubscribe-btn"> Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Footer Dividers  -->
+            <hr class="d-none d-md-block footer__divider ">
+            <!-- End Footer Dividers  -->
+            <!-- Start Bottom Footer -->
+            <div class="footer__bottom-footer">
+                <ul class="bottom-footer__links-list">
+                    <li class="footer-links__list-item--active footer-links__list-item ">Home</li>
+                    <li class="footer-links__list-item">Shop</li>
+                    <li class="footer-links__list-item">Blog</li>
+                    <li class="footer-links__list-item">F.a.q.</li>
+                    <li class="footer-links__list-item">Terms & Condations</li>
+                    <li class="footer-links__list-item">Contacts Us</li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-6  order-md-1 order-2 ">
+                        <div class="bottom-footer__copyright">
+                            <p>&copy; Copyright 2019 | <span>Oxygen</span> By <span>Laborator</sppan>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 ">
+                        <div class="bottom-footer__payment-icon">
+                            <img src="imges/payment-icon/visa.png" class="payment-icon__img" alt="visa">
+                            <img src="imges/payment-icon/mastercard.png" class="payment-icon__img" alt="mastercard">
+                            <img src="imges/payment-icon/paypal.png" class="payment-icon__img" alt="paypal img">
+                            <img src="imges/payment-icon/DHL.png" class="payment-icon__img" alt="Dhl img">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Bottom Footer -->
+        </div>
+    </div>
+    <!-- End Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/glide.min.js">   </script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/main.js">   </script>
+    <script src="http://localhost:35729/livereload.js">   </script>
+</body>
+
+</html>
